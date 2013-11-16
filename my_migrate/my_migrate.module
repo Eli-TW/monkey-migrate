@@ -1,0 +1,13 @@
+<?php
+/**
+ * Implements hook_migrate_api().
+ * Specifies we are using v2 of the migrate api
+ * @return int
+ */
+
+function my_migrate_migrate_api() {
+  $api = array(
+    'api' => 2,
+  );
+  return $api;
+}
