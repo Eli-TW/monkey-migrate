@@ -14,9 +14,7 @@ To recreate the demos in the talk, create two Drupal 7 sites on the same server*
 
 Edit the settings.php for the destination site to add the source system to the $databases array - it should look something like this:
 
-$databases = array(
-  'default' => array(
-    'default' => array(
+    $databases['default']['default'] = array(
       'database' => 'dest_local',
       'username' => 'dest_local',
       'password' => 'dest_local',
@@ -24,10 +22,9 @@ $databases = array(
       'port' => '',
       'driver' => 'mysql',
       'prefix' => false,
-    ),
-  ),
-  'source_db' => array(
-    'default' => array(
+    );
+    
+    $databases['source_db']['default'] = array(
       'database' => 'source_local',
       'username' => 'source_local',
       'password' => 'source_local',
@@ -35,9 +32,7 @@ $databases = array(
       'port' => '',
       'driver' => 'mysql',
       'prefix' => false,
-    ),
-  )
-);
+    );
 
 It must be named source_db to match the queries defined in the Migration subclasses in my_migrate.
 
