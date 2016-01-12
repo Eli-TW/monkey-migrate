@@ -1,0 +1,26 @@
+# Migration configuration for monkeys.
+id: monkey_node
+label: Simians of the world
+# migration_group: beer
+# I think this source has to match the plugin id on the annotation?
+source:
+  plugin: monkey_node
+  target: db_migration
+destination:
+  plugin: entity:node
+process:
+  # Hardcode the destination node type (bundle) as 'monkey'.
+  type:
+    plugin: default_value
+    default_value: monkey
+  title: name
+  nid: monkey_id
+#  uid:
+#    plugin: migration
+#    migration: beer_user
+#    source: aid
+#  sticky:
+#    plugin: default_value
+#    default_value: 0
+#  'body/value': body
+#  'body/summary': excerpt

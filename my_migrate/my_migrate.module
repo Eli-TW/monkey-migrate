@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Contains my_migrate.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function my_migrate_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the my_migrate module.
+    case 'help.page.my_migrate':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Contrived migrate module for example purposes during talk') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+

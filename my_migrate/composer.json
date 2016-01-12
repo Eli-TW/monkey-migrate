@@ -1,0 +1,14 @@
+{
+  "name": "drupal/my_migrate",
+  "type": "drupal-module",
+  "description": "Contrived migrate module for example purposes during talk",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/my_migrate",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/my_migrate",
+    "source": "http://cgit.drupalcode.org/my_migrate"
+  },
+  "require": { }
+}
