@@ -14,12 +14,3 @@ process:
     plugin: default_value
     default_value: monkey
   title: name
-#  uid:
-#    plugin: migration
-#    migration: beer_user
-#    source: aid
-#  sticky:
-#    plugin: default_value
-#    default_value: 0
-#  'body/value': body
-#  'body/summary': excerpt
