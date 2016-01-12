@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Contains node_types.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function node_types_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the node_types module.
+    case 'help.page.node_types':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This contains all the node types for the migration demonstration') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
