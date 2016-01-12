@@ -14,4 +14,3 @@ process:
     plugin: default_value
     default_value: monkey
   title: name
-  nid: monkey_id
