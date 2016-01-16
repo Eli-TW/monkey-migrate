@@ -1,0 +1,26 @@
+uuid: 7de4f761-62f3-435e-9704-4fbe4d4fb3b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_favourite_tree
+    - node.type.monkey
+    - node.type.tree
+id: node.monkey.field_favourite_tree
+field_name: field_favourite_tree
+entity_type: node
+bundle: monkey
+label: 'Favourite tree'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      tree: tree
+    sort:
+      field: _none
+field_type: entity_reference
