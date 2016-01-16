@@ -18,7 +18,7 @@ class MonkeyNode extends SqlBase {
    */
   public function query() {
     $query = $this->select('monkeys', 'm')
-      ->fields('m', ['monkey_id', 'name']);
+      ->fields('m', ['monkey_id', 'name', 'best_friend_id', 'favourite_tree_id']);
     return $query;
   }
 
@@ -29,6 +29,8 @@ class MonkeyNode extends SqlBase {
     $fields = [
       'monkey_id' => $this->t('ID of the monkey'),
       'name' => $this->t('Name of monkey'),
+      'best_friend_id' => $this->t('Best friend of monkey'),
+      'favourite_tree_id' => $this->t('Favourite tree of monkey'),
     ];
 
     return $fields;

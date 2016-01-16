@@ -1,8 +1,7 @@
 # Migration configuration for monkeys.
 id: monkey_node
 label: Simians of the world
-# migration_group: beer
-# I think this source has to match the plugin id on the annotation?
+# This source has to match the plugin id on the annotation
 source:
   plugin: monkey_node
   target: db_migration
@@ -14,3 +13,14 @@ process:
     plugin: default_value
     default_value: monkey
   title: name
+  field_favourite_tree:
+    plugin: migration
+    migration: tree_node
+    source: favourite_tree_id
+#  field_best_friend:
+#    plugin: migration
+#    migration: monkey_node
+#    source: best_friend_id
+migration_dependencies:
+  required:
+    - tree_node
