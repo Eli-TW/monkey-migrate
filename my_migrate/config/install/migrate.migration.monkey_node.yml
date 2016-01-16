@@ -4,7 +4,6 @@ label: Simians of the world
 # This source has to match the plugin id on the annotation
 source:
   plugin: monkey_node
-  target: db_migration
 destination:
   plugin: entity:node
 process:

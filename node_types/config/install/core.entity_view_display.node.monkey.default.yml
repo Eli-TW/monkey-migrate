@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.monkey.field_best_friend
+    - field.field.node.monkey.field_favourite_tree
+    - node.type.monkey
+  module:
+    - user
+id: node.monkey.default
+targetEntityType: node
+bundle: monkey
+mode: default
+content:
+  field_best_friend:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_favourite_tree:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 100
+hidden: {  }
