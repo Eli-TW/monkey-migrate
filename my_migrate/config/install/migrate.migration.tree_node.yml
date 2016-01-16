@@ -1,0 +1,15 @@
+# Migration configuration for trees.
+id: tree_node
+label: Trees of the world
+# This source has to match the plugin id on the annotation
+source:
+  plugin: tree_node
+destination:
+  plugin: entity:node
+process:
+  # Hardcode the destination node type (bundle) as 'tree'.
+  type:
+    plugin: default_value
+    default_value: tree
+  # Map 'title' on the destination to 'name' from the source
+  title: name
