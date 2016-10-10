@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains my_migrate.module..
+ * Contains my_migrate.module.
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
@@ -22,4 +22,3 @@ function my_migrate_help($route_name, RouteMatchInterface $route_match) {
     default:
   }
 }
-
