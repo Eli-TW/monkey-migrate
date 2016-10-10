@@ -3,3 +3,7 @@ type: module
 description: Contrived migrate module for example purposes during talk
 core: 8.x
 package: Monkey Migrate
+dependencies:
+  - migrate
+  - migrate_plus
+  - migrate_tools
