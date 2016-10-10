@@ -1,6 +1,8 @@
 monkey-migrate
 ==============
 
+THESE INSTRUCTIONS ARE OUT OF DATE AND REFER MAINLY TO THE D7 VERSION OF THIS CODE IN THE MASTER BRANCH
+
 This repository holds all the code required to recreate the Drupal migrate demonstrations given in the talk "Get Your Bits In", by Elliot Ward.
 
 The talk serves as an introduction to migrating content to Drupal using the migrate module and was initially given at DrupalCampNW 2012 in Manchester. The video from that version of the talk is available at http://vimeo.com/54448150, and the latest version of the slides are available at http://prezi.com/9i5xka5asfc3/get-your-bits-in-v2/
