@@ -14,7 +14,7 @@ use Drupal\migrate\Plugin\migrate\source\SqlBase;
 class MonkeyNode extends SqlBase {
 
   /**
-   * @inheritdoc
+   * {@inheritdoc}
    */
   public function query() {
     $query = $this->select('monkeys', 'm')
