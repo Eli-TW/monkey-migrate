@@ -1,0 +1,10 @@
+services:
+  monkey_event_subscriber:
+    class: Drupal\my_migrate\EventSubscriber\MonkeyEventSubscriber
+    arguments: ['@logger.channel.my_migrate']
+    tags:
+      - { name: event_subscriber }
+  logger.channel.my_migrate:
+      class: Drupal\Core\Logger\LoggerChannel
+      factory: logger.factory:get
+      arguments: ['my_migrate']
