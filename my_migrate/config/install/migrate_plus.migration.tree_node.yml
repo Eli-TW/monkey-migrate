@@ -13,3 +13,9 @@ process:
     default_value: tree
   # Map 'title' on the destination to 'name' from the source
   title: name
+dependencies:
+  module:
+    - my_migrate
+  enforced:
+    module:
+      - my_migrate

@@ -16,10 +16,16 @@ process:
     plugin: migration
     migration: tree_node
     source: favourite_tree_id
-#  field_best_friend:
-#    plugin: migration
-#    migration: monkey_node
-#    source: best_friend_id
+  field_best_friend:
+    plugin: migration
+    migration: monkey_node
+    source: best_friend_id
 migration_dependencies:
   required:
     - tree_node
+dependencies:
+  module:
+    - my_migrate
+  enforced:
+    module:
+      - my_migrate
