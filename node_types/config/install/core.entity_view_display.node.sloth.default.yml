@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.sloth.body
+    - node.type.sloth
+  module:
+    - text
+    - user
+id: node.sloth.default
+targetEntityType: node
+bundle: sloth
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }
