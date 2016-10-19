@@ -1,0 +1,14 @@
+# Migration configuration for sloths.
+id: sloth_node
+label: Megalonychidae or Bradypodidae
+# This source has to match the plugin id on the annotation
+source:
+  plugin: sloth_node
+destination:
+  plugin: entity:node
+process:
+  # Hardcode the destination node type (bundle) as 'sloth'.
+  type:
+    plugin: default_value
+    default_value: sloth
+  title: name

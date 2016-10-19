@@ -1,0 +1,5 @@
+name: My Drush Migrate
+type: module
+description: Contrived migrate module for example purposes during talk using migrate_drush rather than migrate_tools
+core: 8.x
+package: Monkey Migrate
