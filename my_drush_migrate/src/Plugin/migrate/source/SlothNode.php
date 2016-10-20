@@ -18,7 +18,7 @@ class SlothNode extends SqlBase {
    */
   public function query() {
     $query = $this->select('sloths', 's')
-      ->fields('m', ['sloth_id', 'name']);
+      ->fields('s', ['sloth_id', 'name']);
     return $query;
   }
 
