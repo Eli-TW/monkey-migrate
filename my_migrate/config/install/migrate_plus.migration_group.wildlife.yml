@@ -1,0 +1,9 @@
+id: wildlife
+label: Wildlife
+description: A migration group for flora and fauna
+source: Custom database
+dependencies:
+  enforced:
+    module:
+      - my_migrate
+

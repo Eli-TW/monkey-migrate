@@ -1,6 +1,7 @@
 # Migration configuration for trees.
 id: tree_node
 label: Trees of the world
+migration_group: wildlife
 # This source has to match the plugin id on the annotation
 source:
   plugin: tree_node
